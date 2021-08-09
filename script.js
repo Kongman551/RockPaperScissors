@@ -1,5 +1,3 @@
-console.log("Welcome to Rock, Paper, Scissors!");
-
 let pScore = 0;
 let cScore = 0;
 let round = 0;
@@ -98,5 +96,3 @@ function game() {
         }
     }
 }
-
-game();

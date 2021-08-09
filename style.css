@@ -1,0 +1,36 @@
+body{
+   text-align: center;
+}
+.game-container{
+    margin: 0 auto;
+    max-width: 50%;
+    background-color: lightgray;
+}
+.game-container div{
+    margin: 0 auto;
+}
+.headings-container{
+    padding: 20px;
+    background-color: lightgreen;
+}
+.buttons-container{
+    padding: 20px;
+    background-color: deepskyblue;
+    display: flex;
+    justify-content: space-evenly;
+}
+.btns{
+    height: 150px;
+    width: 150px;
+}
+.results-container{
+    padding: 20px;
+    background-color: lightpink;
+}
+.score-container{
+    padding: 20px;
+    background-color: lightyellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
