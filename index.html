@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <script src="script.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,24 +11,29 @@
     <div class="game-container">
         <div class="headings-container">
             <h1 id="title">Rock Paper Scissors</h1>
-            <p id="directions">Open the console to start the game</p>
+            <p id="directions">A simple game using HTML, CSS, and JavaScript</p>
         </div>
 
-        <div class="buttons-container">
-            <button class="btns" id="rock-btn">Rock</button>
-            <button class="btns" id="paper-btn">Paper</button>
-            <button class="btns" id="scissors-btn">Scissors</button>
+        <div class="choices-container">
+            <button class="choices" id="rock-btn">Rock</button>
+            <button class="choices" id="paper-btn">Paper</button>
+            <button class="choices" id="scissors-btn">Scissors</button>
         </div>
 
         <div class="results-container">
-            <p id="results">Results</p>
+            <p id="results"></p>
         </div>
 
         <div class="score-container">
-            <p id="p-score">Player:</p>
-            <p id="c-score">Computer:</p>
+            <p id="p-score">Player: 0</p>
+            <p id="c-score">Computer: 0</p>
+        </div>
+
+        <div class="restart-container">
+            <button id="restart-btn">Restart</button>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

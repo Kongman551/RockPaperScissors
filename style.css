@@ -13,13 +13,13 @@ body{
     padding: 20px;
     background-color: lightgreen;
 }
-.buttons-container{
+.choices-container{
     padding: 20px;
     background-color: deepskyblue;
     display: flex;
     justify-content: space-evenly;
 }
-.btns{
+.choices{
     height: 150px;
     width: 150px;
 }
