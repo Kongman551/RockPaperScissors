@@ -3,6 +3,10 @@
 
 <head>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,12 +19,12 @@
         </div>
 
         <div class="choices-container">
-            <button class="choices" id="rock-btn">Rock</button>
-            <button class="choices" id="paper-btn">Paper</button>
-            <button class="choices" id="scissors-btn">Scissors</button>
+            <button class="choices" id="rock-btn"></button>
+            <button class="choices" id="paper-btn"></button>
+            <button class="choices" id="scissors-btn"></button>
         </div>
 
-        <div class="results-container">
+        <div id="results-container">
             <p id="results"></p>
         </div>
 
@@ -33,6 +37,16 @@
             <button id="restart-btn">Restart</button>
         </div>
     </div>
+
+    <div id="popUp" class="modal">
+        <div class="popUp-content">
+            <h2 id="popUp-result">Win or Lose?</h2>
+            <img id="popUp-img" src="">
+            <button id="popUp-restart-btn">Play again?</button>
+        </div>
+
+    </div>
+
     <script src="script.js"></script>
 </body>
 

@@ -2,14 +2,18 @@
 const rockButton = document.getElementById('rock-btn');
 const paperButton = document.getElementById('paper-btn');
 const scissorsButton = document.getElementById('scissors-btn');
+const resultsContainer = document.getElementById('results-container');
 const results = document.getElementById('results');
 const playerScore = document.getElementById('p-score');
 const compScore = document.getElementById('c-score');
 const restartButton = document.getElementById('restart-btn');
+const modal = document.getElementById("popUp");
+const popUpRestart = document.getElementById('popUp-restart-btn');
+const popUpResult = document.getElementById('popUp-result');
+const popUpImage = document.getElementById('popUp-img');
 
 let pScore = 0;
 let cScore = 0;
-
 
 //Event Listeners
 rockButton.addEventListener('click', function doRock() {
@@ -23,6 +27,19 @@ scissorsButton.addEventListener('click', function doScissors() {
 });
 restartButton.addEventListener('click', () => restart());
 
+popUpRestart.addEventListener('click', function () {
+    modal.style.display = 'none';
+    restart();
+});
+
+/* function checkResults(){
+    if(results.textContent != ''){
+        resultsContainer.style.display='block';
+    }
+    else {
+        resultsContainer.style.display='none';
+    }
+} */
 
 function computerPlay() {
     let num = Math.floor(Math.random() * 3);
@@ -42,7 +59,7 @@ function computerPlay() {
     return result;
 }
 
-function updateScore(){
+function updateScore() {
     playerScore.textContent = `Player: ${pScore}`;
     compScore.textContent = `Computer: ${cScore}`;
 }
@@ -104,14 +121,17 @@ function restart() {
     pScore = 0;
     cScore = 0;
     updateScore();
+    results.textContent = "";
 }
 
-function endGame(pScore, cScore){
-    if (pScore == 5){
-        results.textContent = "win";
+function endGame(pScore, cScore) {
+    if (pScore == 5) {
+        modal.style.display = "block";
+        popUpResult.textContent = "Congratulations, you win!";
     }
-    else if (cScore == 5){
-        results.textContent = "lost";
+    else if (cScore == 5) {
+        modal.style.display = "block";
+        popUpResult.textContent = "Sorry, you lost!"
     }
-    
+
 }
