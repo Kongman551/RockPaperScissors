@@ -43,15 +43,15 @@ body {
 
 
 #rock-btn {
-    background-image: url(/images/rock.png);
+    background-image: url(/RockPaperScissors/images/rock.png);
 }
 
 #paper-btn {
-    background-image: url(/images/paper.png);
+    background-image: url(/RockPaperScissors/images/paper.png);
 }
 
 #scissors-btn {
-    background-image: url(/images/scissors.png);
+    background-image: url(/RockPaperScissors/images/scissors.png);
 }
 
 .results-container {
